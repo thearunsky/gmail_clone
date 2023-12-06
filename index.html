@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Gmail Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[url('./imgs/bk.jpg')] bg-center bg-no-repeat">
+    <div class="main    h-screen flex text-white">
+        <div class="left w-3/12">
+            <div class="logos flex items-center pl-5  ">
+                <i class="fa-solid fa-grip-lines mr-5 fa-2xl"></i>
+                <img class="h-16" src="./imgs/gmail_logo.png" alt="" srcset="">
+            </div>
+
+            <div class="compose bg-white text-black w-6/12 h-16 ml-3 rounded rounded-2xl flex justify-around my-5 items-center text-xl">
+                <i class="fa-solid fa-pencil"></i>
+                <span>Compose</span>
+            </div>
+
+            <div class="leftButtons   flex flex-col">
+                <a href="" class="w-10/12 bg-white bg-opacity-40 font-bold rounded-r-3xl   py-2 pl-5 flex justify-between"><p><i class="fa-solid fa-inbox mr-5"></i> Inbox</p> <span class="mr-5">690</span></a>
+                <a href="" class="w-10/12 hover:bg-white hover:bg-opacity-40 hover:font-bold rounded-r-3xl font-medium py-2 pl-5"><i class="fa-regular fa-star mr-5"></i>Starred</a>
+                <a href="" class="w-10/12 hover:bg-white hover:bg-opacity-40 hover:font-bold rounded-r-3xl font-medium py-2 pl-5"><i class="fa-regular fa-clock mr-5"></i>Snoozed</a>
+                <a href="" class="w-10/12 hover:bg-white hover:bg-opacity-40 hover:font-bold rounded-r-3xl font-medium py-2 pl-5"><i class="fa-solid fa-paper-plane mr-5"></i>Sent</a>
+                <a href="" class="w-10/12 hover:bg-white hover:bg-opacity-40 hover:font-bold rounded-r-3xl font-medium py-2 pl-5"><i class="fa-regular fa-file mr-5"></i>Draft</a>
+                <a href="" class="w-10/12 hover:bg-white hover:bg-opacity-40 hover:font-bold rounded-r-3xl font-medium py-2 pl-5"><i class="fa-solid fa-angle-down mr-5"></i>More</a>
+               
+                <p class="w-10/12 font-medium text-2xl border-black py-2 pl-5 flex justify-between items-center mt-5"><span>Label</span><i class="fa-solid fa-plus"></i></p>
+            </div>
+        </div>
+        <div class="right   w-full">
+
+            <div class="rightUp flex justify-between items-center  ">
+                <div contenteditable="true" class="bg-white bg-opacity-40   w-7/12 py-4 px-3 rounded rounded-3xl flex justify-between items-center text-xl" type="text">
+                    <div class="inputStar flex justify-between items-center ">
+                        <i class="fa-solid fa-magnifying-glass mr-5"></i>
+                        Search mail
+                    </div>
+                    <i class="fa-solid fa-sliders"></i>
+                </div>
+    
+                <div class="h-full   ">
+                    <ul class="flex items-center">
+                        <li class="m-2 mx-4"><i class="fa-regular fa-circle-question fa-2xl"></i></li>
+                        <li class="m-2 mx-4"><i class="fa-solid fa-gear fa-2xl"></i></li>
+                        <li class="m-2 mx-4"><i class="fa-solid fa-list-ul fa-2xl"></i></li>
+                        <li class="m-2 mx-4"><img class="max-h-12 max-w-full" src="./imgs//profile.png" alt="" srcset=""></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="rightDown  mt-3 text-black flex">
+                <div class="rightDownLeft bg-white w-11/12   rounded rounded-3xl">
+                    <div>
+                        <div class="flex justify-between mx-3 p-2 text-lg">
+                            <div class="w-2/12   flex justify-start items-center">
+                                <i class="fa-regular fa-square mr-2"></i>
+                                <i class="fa-solid fa-angle-down mr-10"></i>
+                                <i class="fa-solid fa-rotate-right mr-10"></i>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+
+                            <div class="flex w-3/12   justify-center">
+                                <p class="mr-12">1-100 of 929</p> <span><i class="fa-solid fa-angle-left mr-12"></i><i class="fa-solid fa-angle-right"></i></span>
+                            </div>
+                        </div>
+                        <div class="mx-3 p-2 flex text-xl">
+                            <div class="promoF w-3/12 flex items-center border-b-4 border-indigo-500 py-5">
+                                <i class="fa-solid fa-envelope mr-5"></i>
+                                <p>Primary</p>
+                            </div>
+                            <div class="promoS w-3/12 flex items-center py-5">
+                                <i class="fa-solid fa-rectangle-ad mr-5"></i>
+                                <p>Promotion</p>
+                            </div>
+                            <div class="promoT flex items-center py-5">
+                                <i class="fa-solid fa-user-group mr-5"></i>
+                                <p>Social</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mx-3 p-2 messages overflow-scroll overflow-x-hidden h-[550px]">
+ 
+                        <div class="flex items-center py-2  border-b-2 border-gray-300">
+                            <i class="fa-regular fa-square mr-6"></i>
+                            <i class="fa-regular fa-star mr-3"></i>
+                            <p class="w-2/12  text-lg font-bold">PhonePe</p>
+
+                            <div class="message w-full flex justify-between ">
+                                <p class=" text-lg font-bold">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, dolorem! </p>
+                                <p>3:13 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center py-2  border-b-2 border-gray-300">
+                            <i class="fa-regular fa-square mr-6"></i>
+                            <i class="fa-regular fa-star mr-3"></i>
+                            <p class="w-2/12  text-lg font-bold">PhonePe</p>
+
+                            <div class="message w-full flex justify-between ">
+                                <p class=" text-lg font-bold">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, dolorem! </p>
+                                <p>3:13 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center py-2  border-b-2 border-gray-300">
+                            <i class="fa-regular fa-square mr-6"></i>
+                            <i class="fa-regular fa-star mr-3"></i>
+                            <p class="w-2/12  text-lg font-bold">PhonePe</p>
+
+                            <div class="message w-full flex justify-between ">
+                                <p class=" text-lg font-bold">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, dolorem! </p>
+                                <p>3:13 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center py-2  border-b-2 border-gray-300">
+                            <i class="fa-regular fa-square mr-6"></i>
+                            <i class="fa-regular fa-star mr-3"></i>
+                            <p class="w-2/12  text-lg font-bold">PhonePe</p>
+
+                            <div class="message w-full flex justify-between ">
+                                <p class=" text-lg font-bold">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, dolorem! </p>
+                                <p>3:13 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center py-2  border-b-2 border-gray-300">
+                            <i class="fa-regular fa-square mr-6"></i>
+                            <i class="fa-regular fa-star mr-3"></i>
+                            <p class="w-2/12  text-lg font-bold">PhonePe</p>
+
+                            <div class="message w-full flex justify-between ">
+                                <p class=" text-lg font-bold">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, dolorem! </p>
+                                <p>3:13 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center py-2  border-b-2 border-gray-300">
+                            <i class="fa-regular fa-square mr-6"></i>
+                            <i class="fa-regular fa-star mr-3"></i>
+                            <p class="w-2/12  text-lg font-bold">PhonePe</p>
+
+                            <div class="message w-full flex justify-between ">
+                                <p class=" text-lg font-bold">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, dolorem! </p>
+                                <p>3:13 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center py-2  border-b-2 border-gray-300">
+                            <i class="fa-regular fa-square mr-6"></i>
+                            <i class="fa-regular fa-star mr-3"></i>
+                            <p class="w-2/12  text-lg font-bold">PhonePe</p>
+
+                            <div class="message w-full flex justify-between ">
+                                <p class=" text-lg font-bold">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, dolorem! </p>
+                                <p>3:13 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center py-2  border-b-2 border-gray-300">
+                            <i class="fa-regular fa-square mr-6"></i>
+                            <i class="fa-regular fa-star mr-3"></i>
+                            <p class="w-2/12  text-lg font-bold">PhonePe</p>
+
+                            <div class="message w-full flex justify-between ">
+                                <p class=" text-lg font-bold">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, dolorem! </p>
+                                <p>3:13 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center py-2  border-b-2 border-gray-300">
+                            <i class="fa-regular fa-square mr-6"></i>
+                            <i class="fa-regular fa-star mr-3"></i>
+                            <p class="w-2/12  text-lg font-bold">PhonePe</p>
+
+                            <div class="message w-full flex justify-between ">
+                                <p class=" text-lg font-bold">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, dolorem! </p>
+                                <p>3:13 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center py-2  border-b-2 border-gray-300">
+                            <i class="fa-regular fa-square mr-6"></i>
+                            <i class="fa-regular fa-star mr-3"></i>
+                            <p class="w-2/12  text-lg font-bold">PhonePe</p>
+
+                            <div class="message w-full flex justify-between ">
+                                <p class=" text-lg font-bold">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, dolorem! </p>
+                                <p>3:13 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center py-2  border-b-2 border-gray-300">
+                            <i class="fa-regular fa-square mr-6"></i>
+                            <i class="fa-regular fa-star mr-3"></i>
+                            <p class="w-2/12  text-lg font-bold">PhonePe</p>
+
+                            <div class="message w-full flex justify-between ">
+                                <p class=" text-lg font-bold">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, dolorem! </p>
+                                <p>3:13 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center py-2  border-b-2 border-gray-300">
+                            <i class="fa-regular fa-square mr-6"></i>
+                            <i class="fa-regular fa-star mr-3"></i>
+                            <p class="w-2/12  text-lg font-bold">PhonePe</p>
+
+                            <div class="message w-full flex justify-between ">
+                                <p class=" text-lg font-bold">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, dolorem! </p>
+                                <p>3:13 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center py-2  border-b-2 border-gray-300">
+                            <i class="fa-regular fa-square mr-6"></i>
+                            <i class="fa-regular fa-star mr-3"></i>
+                            <p class="w-2/12  text-lg font-bold">PhonePe</p>
+
+                            <div class="message w-full flex justify-between ">
+                                <p class=" text-lg font-bold">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, dolorem! </p>
+                                <p>3:13 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center py-2  border-b-2 border-gray-300">
+                            <i class="fa-regular fa-square mr-6"></i>
+                            <i class="fa-regular fa-star mr-3"></i>
+                            <p class="w-2/12  text-lg font-bold">PhonePe</p>
+
+                            <div class="message w-full flex justify-between ">
+                                <p class=" text-lg font-bold">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, dolorem! </p>
+                                <p>3:13 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center py-2  border-b-2 border-gray-300">
+                            <i class="fa-regular fa-square mr-6"></i>
+                            <i class="fa-regular fa-star mr-3"></i>
+                            <p class="w-2/12  text-lg font-bold">PhonePe</p>
+
+                            <div class="message w-full flex justify-between ">
+                                <p class=" text-lg font-bold">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, dolorem! </p>
+                                <p>3:13 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center py-2  border-b-2 border-gray-300">
+                            <i class="fa-regular fa-square mr-6"></i>
+                            <i class="fa-regular fa-star mr-3"></i>
+                            <p class="w-2/12  text-lg font-bold">PhonePe</p>
+
+                            <div class="message w-full flex justify-between ">
+                                <p class=" text-lg font-bold">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, dolorem! </p>
+                                <p>3:13 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center py-2  border-b-2 border-gray-300">
+                            <i class="fa-regular fa-square mr-6"></i>
+                            <i class="fa-regular fa-star mr-3"></i>
+                            <p class="w-2/12  text-lg font-bold">PhonePe</p>
+
+                            <div class="message w-full flex justify-between ">
+                                <p class=" text-lg font-bold">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, dolorem! </p>
+                                <p>3:13 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center py-2  border-b-2 border-gray-300">
+                            <i class="fa-regular fa-square mr-6"></i>
+                            <i class="fa-regular fa-star mr-3"></i>
+                            <p class="w-2/12  text-lg font-bold">PhonePe</p>
+
+                            <div class="message w-full flex justify-between ">
+                                <p class=" text-lg font-bold">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, dolorem! </p>
+                                <p>3:13 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center py-2  border-b-2 border-gray-300">
+                            <i class="fa-regular fa-square mr-6"></i>
+                            <i class="fa-regular fa-star mr-3"></i>
+                            <p class="w-2/12  text-lg font-bold">PhonePe</p>
+
+                            <div class="message w-full flex justify-between ">
+                                <p class=" text-lg font-bold">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, dolorem! </p>
+                                <p>3:13 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightDownRight w-1/12   flex flex-col items-center justify-around">
+                    <img class="max-h-10 max-w-full my-5" src="./imgs/contact.png" alt="" srcset="">
+                    <img class="max-h-10 max-w-full my-5" src="./imgs/keep.png" alt="" srcset="">
+                     
+                    <img class="max-h-10 max-w-full my-5" src="./imgs/contact.png" alt="" srcset="">
+                    <img class="max-h-10 max-w-full my-5" src="./imgs/keep.png" alt="" srcset="">
+                     
+                    <img class="max-h-10 max-w-full my-5" src="./imgs/contact.png" alt="" srcset="">
+                    <img class="max-h-10 max-w-full my-5" src="./imgs/keep.png" alt="" srcset="">
+                     
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
